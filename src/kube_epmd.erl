@@ -104,6 +104,6 @@ resolve(Namespace, Token, [Pod|Rest]) ->
                             {ok, Address, Port, Creation}
                     end
             end;
-        _ ->
-            {error, nxdomain}
+        R ->
+            {error, R}
     end.
